@@ -1,0 +1,11 @@
+link(rel="stylesheet", href="/stylesheets/style.css")
+
+a(href="/new") New Message
+
+ul 
+  each message in messages
+    div.chunk 
+      li= message.user
+      li= message.text
+      li= message.added
+    
